@@ -29,7 +29,13 @@ jobs:
         uses: supercharge/redis-github-action@1.4.0
         with:
           redis-version: 5
+
       - run: npm ci
       - run: npm run build
       - run: nohup npm run start &
-      - run: npm run test
+
+      - name: Sleep for 30 seconds
+        run: sleep 30s
+        shell: bash
+
+      - run: npm run test --forceExit

@@ -5,8 +5,7 @@
   "main": "index.js",
   "jest": {
     "testEnvironment": "node",
-    "setupTestFrameworkScriptFile": "./tests/setup.js",
-    "globalTeardown": "./tests/teardown.js"
+    "setupTestFrameworkScriptFile": "./tests/setup.js"
   },
   "scripts": {
     "start": "node index.js",
