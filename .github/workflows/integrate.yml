@@ -31,5 +31,5 @@ jobs:
           redis-version: 5
       - run: npm ci
       - run: npm run build
-      - run: npm run start
+      - run: nohup npm run start &
       - run: npm run test
