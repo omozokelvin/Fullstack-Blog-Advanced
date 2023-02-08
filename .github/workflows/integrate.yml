@@ -1,11 +1,11 @@
 name: Fullstack Blog Continuous Integration
 
 on:
-  pull_request:
+  push:
     branches: [master]
 
 jobs:
-  test_pull_request:
+  test_push_request:
     runs-on: ubuntu-latest
     env:
       NODE_ENV: ci
