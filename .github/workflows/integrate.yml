@@ -23,12 +23,12 @@ jobs:
       - name: Start MongoDB
         uses: supercharge/mongodb-github-action@1.8.0
         with:
-          mongodb-version: 6
+          mongodb-version: 6.0
 
       - name: Start Redis
         uses: supercharge/redis-github-action@1.4.0
         with:
-          redis-version: 7
+          redis-version: 5
       - run: npm ci
       - run: npm run build
       - run: npm run start
