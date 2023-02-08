@@ -38,4 +38,4 @@ jobs:
         run: sleep 30s
         shell: bash
 
-      - run: npm run test --forceExit
+      - run: npm run test
